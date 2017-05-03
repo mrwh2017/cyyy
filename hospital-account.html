@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>personal</title>
+	<link rel="stylesheet" href="css/master.css">
+	<style>
+		.dt-personal{
+			height: 100%;
+		}
+		.list-container{
+	/* 		height: 100%; */
+		}
+		.list-title{
+			background-color: initial;
+			box-shadow: none;
+			margin-top: 10px;
+		}
+		.list-title p{
+			padding: 10px 30px;
+    	height: 100%;
+			width: 100%;
+      background: #a1cb27;
+      color: #fff;
+      border-radius: 5px;
+		}
+		.content-card{
+			height: auto;
+			margin-top: 0;
+			padding-top: 0;
+			cursor: initial;
+		}
+		.content-card div:hover .msg-arrow{
+			left: 15px;
+		}
+		.content-card .msg-list:hover{
+			cursor: pointer;
+		}
+		.personal-order .content-card{
+			margin-top: 20px;
+		}
+		.personal-card div ul li{
+			list-style-type: none;
+		}
+		.personal-card div{
+			height: 45px;
+			width:  100%;
+			line-height: 45px;
+		}
+		.personal-health{
+			margin-top: 20px;
+		}
+		div{
+			box-sizing: border-box;
+		}
+
+		.personal-msg-title,
+		.personal-order-title{
+			background-color: #d6d6d6;
+		}
+		.personal-msg-title>span,
+		.personal-order-title>span{
+			padding-left: 25px;
+			font-size: 14px;
+			color: #000;
+		}
+		.msg-list,
+		.order-time-list{
+			padding-left: 25px;
+			padding-right: 25px;
+			border-bottom:  1px solid #e2e2e2;
+			height: 100%;
+		}
+    p.order-time-list{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+		.msg-health-list,
+		.order-time-list{
+			border: 0;
+		}
+		.msg-list li,
+		.order-time-list li{
+			display: inline-block;
+		}
+		.personal-order .personal-card div .msg-list{
+			cursor: pointer;
+		}
+		.personal-order .personal-card div .msg-list:nth-of-type(4){
+			cursor: initial;
+		}
+		.msg-arrow{
+			float: right;
+			height: 100%;
+			width: 20px;
+			position: relative;
+			left: 5px;
+			background:  url('imgs/arrow.png') no-repeat 50% 50%;
+			background-size: 18px 25px;
+			transition: all 160ms ease-out;
+		}
+		.msg-list li:nth-of-type(3),
+		.msg-list li:nth-of-type(2),
+		.order-time{
+			float: right;
+		}
+		.personal-card .personal-msg-avatar{
+			height: 70px;
+			line-height: 70px;
+		}
+		.avatar-imgs{
+			width: 60px;
+			height: 60px;
+			position: relative;
+    		transform: translateY(5px);
+		}
+		.avatar-imgs img{
+			width: 100%;
+			height: 100%;
+		}
+		.personal-msg-logout{
+			text-align: center;
+    		position: relative;
+    		height: 80px;
+    		margin-top: 30px;
+		}
+		.personal-msg-logout button{
+			padding: 10px 20px;
+			width: 260px;
+			color: #fff;
+			background: #000;
+			border: 1px solid #666;
+		}
+		.order-msg-time{
+			color: #008eff;
+		}
+	</style>
+</head>
+<body>
+		<div class="dt-personal">
+		<div class="list-container">
+	        <div class="list-wrapper">
+	        <div class="personal-list content-list">
+	        <div class="health-title list-title"><p>医院中心</p></div>
+	        <section class="personal-card content-card">
+	        	<div class="personal-msg-title"><span>基本资料</span></div>
+	        	<div class="personal-msg-avatar">
+	        		<a href="personal-msg.html"><ul class="msg-list msg-avatar-list">
+	        			<li class="avatar avatar-title">头像</li>
+	        			<li class="msg-arrow"></li>
+	        			<li class="avatar avatar-imgs"><img src="imgs/ph.jpg" alt="avatar"></li>
+	        		</ul>
+	        		</a>
+	        	</div>
+	        	<div class="personal-msg-account">
+	        		<a href="personal-msg.html"><ul class="msg-list msg-account-list">
+	        			<li class="account account-title">用户名</li>
+	        			<li class="msg-arrow"></li>
+	        			<li class="account account-imgs">草原医生</li>
+	        		</ul>
+	        		</a>
+	        	</div>
+
+	        	<div class="personal-msg-tel">
+	        		<a href="personal-msg.html"><ul class="msg-list msg-tel-list">
+	        			<li class="tel tel-title">网址</li>
+	        			<li class="msg-arrow"></li>
+	        			<li class="tel tel-imgs">www.nmgyy.com</li>
+	        		</ul>
+	        		</a>
+	        	</div>
+	        	<div class="personal-msg-id">
+	        		<a href="personal-msg.html"><ul class="msg-list msg-id-list">
+	        			<li class="id id-title">医院简介</li>
+	        			<li class="msg-arrow"></li>
+	        			<li class="id id-imgs"></li>
+	        		</ul>
+	        		</a>
+	        	</div>
+            <p class="order-time-list">内蒙古医科大学附属医院始建于1958年，经过55年的发展建设，已成为内蒙古自治区一所集医疗、教学、科研和预防保健为一体的现代化综合性三级甲等医院。
+医院现开放床位1808张，年门急诊量135万人次，年出院人数75568人次，年完成住院手术25269台例。全院在职职工属医院始建于1958年，经过55年的发展建设，已成为内蒙古自治区一所集医疗、教学、科研和预防保健为一体的现代化综合性三级甲等医院。
+医院现开放床位1808张，年门急诊量135万人次，年出院人数75568人次，年完成住院手术25269台例。全院在职
+医院现开放床位1808张，年门急诊量135万人次，年出院人数75568人次，年完成住院手术25269台例。全院在职职工
+属医院始建于1958年，经过55年的发展建设，已成为内蒙古自治区一所集医疗、教学、科研和预防保健为一体的现代化综合性三级甲等医院。
+医院现开放床位1808张，年门急诊量135万人次，年出院人数75568人次，年完成住院手术25269台例。全院在职
+医院现开放床位1808张，年门急诊量135万人次，年出院人数75568人次，年完成住院手术25269台例。全院在职职工
+</p>
+
+	        </section>
+
+
+
+	        <div class="personal-order">
+
+	        <section class="personal-card content-card">
+	        	<div class="personal-order-title"><span>医院科室</span><span class="order-msg-time">58 个</span></div>
+	        	<!-- <div class="personal-order-hospital">
+	        		<ul class="msg-list order-hospital-list">
+	        			<li>姓名</li>
+	        			<li class="msg-arrow"></li>
+	        			<li>张小二</li>
+	        		</ul>
+	        	</div>
+
+
+	        	<div class="personal-order-time">
+	        		<ul class=" order-time-list">
+	        			<li class="order-title">时间</li>
+	        			<li class="order-time">2017/03/05/ 9：30</li>
+	        		</ul>
+	        	</div> -->
+	        </section>
+
+          <section class="personal-card content-card">
+	        	<div class="personal-order-title"><span>内科</span><span class="order-msg-time">12个</span></div>
+	        	<div class="personal-order-hospital">
+	        		<ul class="msg-list order-hospital-list">
+	        			<li>风湿免疫科</li>
+	        			<li class="msg-arrow"></li>
+	        			<li>2位医生</li>
+	        		</ul>
+	        	</div>
+
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>呼吸内科</li>
+                <li class="msg-arrow"></li>
+                <li>3位医生</li>
+              </ul>
+            </div>
+
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>内分泌科</li>
+                <li class="msg-arrow"></li>
+                <li>4位医生</li>
+              </ul>
+            </div>
+
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>神经内科</li>
+                <li class="msg-arrow"></li>
+                <li>10位医生</li>
+              </ul>
+            </div>
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>消化内科</li>
+                <li class="msg-arrow"></li>
+                <li>8位医生</li>
+              </ul>
+            </div>
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>肾内科</li>
+                <li class="msg-arrow"></li>
+                <li>11位医生</li>
+              </ul>
+            </div>
+	        </section>
+
+
+
+          <section class="personal-card content-card">
+            <div class="personal-order-title"><span>外科</span><span class="order-msg-time">18个</span></div>
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>风湿免疫科</li>
+                <li class="msg-arrow"></li>
+                <li>2位医生</li>
+              </ul>
+            </div>
+
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>呼吸内科</li>
+                <li class="msg-arrow"></li>
+                <li>3位医生</li>
+              </ul>
+            </div>
+
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>内分泌科</li>
+                <li class="msg-arrow"></li>
+                <li>4位医生</li>
+              </ul>
+            </div>
+
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>神经内科</li>
+                <li class="msg-arrow"></li>
+                <li>10位医生</li>
+              </ul>
+            </div>
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>消化内科</li>
+                <li class="msg-arrow"></li>
+                <li>8位医生</li>
+              </ul>
+            </div>
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>肾内科</li>
+                <li class="msg-arrow"></li>
+                <li>11位医生</li>
+              </ul>
+            </div>
+          </section>
+
+
+          <section class="personal-card content-card">
+            <div class="personal-order-title"><span>骨科</span><span class="order-msg-time">4个</span></div>
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>风湿免疫科</li>
+                <li class="msg-arrow"></li>
+                <li>2位医生</li>
+              </ul>
+            </div>
+
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>呼吸内科</li>
+                <li class="msg-arrow"></li>
+                <li>3位医生</li>
+              </ul>
+            </div>
+
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>内分泌科</li>
+                <li class="msg-arrow"></li>
+                <li>4位医生</li>
+              </ul>
+            </div>
+
+            <div class="personal-order-hospital">
+              <ul class="msg-list order-hospital-list">
+                <li>神经内科</li>
+                <li class="msg-arrow"></li>
+                <li>10位医生</li>
+              </ul>
+            </div>
+          </section>
+
+
+	        </div>
+	        <div class="personal-msg-logout">
+				<button>登出</button>
+			</div>
+	        </div>
+	        </div>
+        </div>
+        </div>
+
+</body>
+</html>

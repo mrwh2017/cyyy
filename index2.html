@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8; IE=9">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>草原医道</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/master.css">
+    <!-- <link rel="stylesheet" href="css/smooth-scrollbar.css"> -->
+    <style media="screen">
+    .slick-dotted.slick-slider{
+      margin-bottom: 0;
+    }
+    .slick-dots li button:before{
+      opacity: 0.8;
+    }
+    .slick-dots li{
+      margin: 0 5px 0 0;
+    }
+    /*remove gallery margin*/
+    .slick-dots{
+      bottom: -6px;
+    }
+    .slick-dots li button:before{
+      width: 6px;
+      height: 6px;
+      content: '';
+      border: 1px solid #0070c9;
+      border-radius: 50%;
+    }
+    .slick-dots li.slick-active button:before{
+      background-color: #a7a7a7;
+      border-color: #a7a7a7;
+    }
+    </style>
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="header-content">
+        <a class="header-content-logo" href="#">
+          <span></span>
+        </a>
+        <div class="header-content-buttons">
+          <a href="hospital.html" class="buttons-order buttons-button">
+            <span class="backdrop"></span>
+            <!-- <span class="order icon"></span> -->
+            <span class="label">挂号就医</span>
+          </a>
+          <a href="health.html" class="buttons-check buttons-button">
+            <span class="backdrop"></span>
+            <!-- <span class="check icon"></span> -->
+            <span class="label">体检预约</span>
+          </a>
+          <a href="person-account.html" class="buttons-me buttons-button">
+            <span class="backdrop"></span>
+            <!-- <span class="me icon"></span> -->
+            <span class="label">个人中心</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-menu-container ">
+      <div class="header-menu">
+        <a data-scroll href="#">首页</a>
+        <a data-scroll href="#hospital">知名医院</a>
+        <a data-scroll href="#doctor">知名医生</a>
+        <a data-scroll href="#doctorm">知名蒙医</a>
+      </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+      <div class="gallery-container">
+        <div class="gallery-slide-wrapper">
+          <a href="#" class="gallery-item"><img src="imgs/banner1.jpg" alt=""></a>
+          <a href="#" class="gallery-item"><img src="imgs/banner2.jpg" alt=""></a>
+          <a href="#" class="gallery-item"><img src="imgs/banner3.jpg" alt=""></a>
+          <a href="#" class="gallery-item"><img src="imgs/banner4.jpg" alt=""></a>
+        </div>
+        <div class="menu-container">
+          <div class="menu-container-fix">
+          <div class="order-menu">
+          <fieldset>
+            <legend class="visuallyhidden">选择挂号方式：</legend>
+            <div class="order-menu-filter">
+              <span class="menu-filter-buttons">
+                <button class="menu-filter-button menu-filter-buttonactive">快速挂号</button>
+                <button class="menu-filter-button">知名医生</button>
+              </span>
+            </div>
+            <div class="order-menu-container">
+              <div class="container-a-section order-model model-hide model-active">
+                <span class="section-select-box"><p>选择地区</p><select class="section-select province" vlaue="a"></select><select class="section-select city" vlaue="a"></select></span>
+                <span class="section-select-box"><p>选择医院</p><select class="section-select hospital" vlaue="a"></select></span>
+                <span class="section-select-box"><p>选择科室</p><select class="section-select project" vlaue="a"></select></span>
+                <div class="order-menu-button">
+              <a  class="buttons-order buttons-button">
+                我要预约
+              </a>
+            </div>
+              </div>
+              <div class="container-b-section order-model model-hide">
+                <span class="section-select-box"><p>选择地区</p><select class="section-select hospital" vlaue="a"></select></span>
+                <span class="section-select-box"><p>中医/蒙医</p><select class="section-select project" vlaue="a"></select></span>
+                <span class="section-select-box"><p>选择医生</p><select class="section-select doctor" vlaue="a"></select></span>
+                <div class="order-menu-button model-hide">
+                  <a  class="buttons-order buttons-button">
+                我要预约
+              </a>
+            </div>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="list-container">
+        <div class="list-wrapper">
+        <!--start hospital list -->
+          <div class="hospital-list content-list">
+            <div class="hospital-title list-title" id="hospital"><p>知名医院</p><p><a class="more-link" href="news-list.html">更多</a></p></div>
+            <section class="hospital-card content-card">
+              <div class="card-gallery"><img src="imgs/nmg.jpg" alt="sum"></div>
+              <div class="card-summary">
+                <div class="summary-title-msg">
+                  <span class="summary-title">内蒙古人民医院</span>
+                  <span class="title-label">三级甲等</span>
+                </div>
+                <div class="summary-address-msg">
+                  <span class="summary-label">地址：</span><span class="summary-address">内蒙古呼和浩特市昭乌达路20号</span>
+                  <span class="summary-address-map">map</span>
+                </div>
+                <div class="summary-tel-msg">
+                  <span class="summary-label">电话：</span><a href="#">0471-6620999</a>
+                </div>
+                <div class="summary-web-msg">
+                  <span class="summary-label">官网：</span><a href="http://www.nmgyy.cn/" target="_blank">http://www.nmgyy.cn/</a>
+                </div>
+                <div class="summary-summary-msg">
+                  <span class="summary-label">简介：</span><span class="summary-summary">内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医多年的发展历程。通过几代内蒙古自治区医院,内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院内蒙古自治区人民医院是自治区直管直办的一所综多年的发展历程。通过几代内蒙古自治区医院,内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院内蒙古自治区人民医院是自治区直管直办的一所综院</span>
+                </div>
+              </div>
+              <div class="card-status">
+                <a href="hospital.html"><span class="status-msg">预约挂号</span></a>
+                </div>
+            </section>
+
+            <section class="hospital-card content-card">
+              <div class="card-gallery"><img src="imgs/nmgfy.jpg" alt="sum"></div>
+              <div class="card-summary">
+                <div class="summary-title-msg">
+                  <span class="summary-title">内蒙古第一附属医院</span>
+                  <span class="title-label">三级甲等</span>
+                </div>
+                <div class="summary-address-msg">
+                  <span class="summary-label">地址：</span><span class="summary-address">内蒙古呼和浩特市呼和浩特通道北街1号</span>
+                  <span class="summary-address-map">map</span>
+                </div>
+                <div class="summary-tel-msg">
+                  <span class="summary-label">电话：</span><a href="#">0471-6636612</a>
+                </div>
+                <div class="summary-web-msg">
+                  <span class="summary-label">官网：</span><a href="http://www.nmgfy.com" target="_blank" >http://www.nmgfy.com</a>
+                </div>
+                <div class="summary-summary-msg">
+                  <span class="summary-label">简介：</span><span class="summary-summary">内蒙古医科大学附属医院始建于1958年，经过55年的发展建设，已成为内蒙古自治区一所集医疗、教学、科研和预防保健为一体的现代化综合性三级甲等医院。
+    医院现开放床位1808张，年门急诊量135万人次，年出院人数75568人次，年完成住院手术25269台例。全院在职职工3129人，其中正高级职称300人，副高级职称364人。目前具有博士学历卫生技术人员117人，硕士生学历卫生技术人员623人，享受国务院政府特殊津贴专家4人。</span>
+                </div>
+              </div>
+              <div class="card-status">
+                <a href="hospital.html"><span class="status-msg">预约挂号</span></a>
+            </section>
+
+            <section class="hospital-card content-card">
+              <div class="card-gallery"><img src="imgs/nmgdy.jpg" alt="sum"></div>
+              <div class="card-summary">
+                <div class="summary-title-msg">
+                  <span class="summary-title">呼和浩特市第一医院</span>
+                  <span class="title-label">三级甲等</span>
+                </div>
+                <div class="summary-address-msg">
+                  <span class="summary-label">地址：</span><span class="summary-address">呼和浩特市玉泉区南二环150号</span>
+                  <span class="summary-address-map">map</span>
+                </div>
+                <div class="summary-tel-msg">
+                  <span class="summary-label">电话：</span><a href="#">0471-5281777</a>
+                </div>
+                <div class="summary-web-msg">
+                  <span class="summary-label">官网：</span><a href="http://www.hsdyyy.com" target="_blank">http://www.hsdyyy.com</a>
+                </div>
+                <div class="summary-summary-msg">
+                  <span class="summary-label">简介：</span><span class="summary-summary">呼和浩特市第一医院始建于1921年，前身是一所比利时公教医院，名为归绥公教医院。经过近百年的励精图治与锐意进取，呼和浩特市第一医院已发展成为一家集医疗、科研、教学、康复、预防、急救为一体的具有鲜明特色的现代化综合医院，承担着全市300.1万人口的主体医疗保健任务。医院先后获得“全国卫生系统先进集体”、“全国百姓放心示范医院”、“全国医保管理先进医院”、“内蒙古自治区百佳医院”、“明码标价示范医院”、“首府百姓最满意的品牌”、“第九届首府百姓最满意的综合医院品牌前三甲”等荣誉。 2009年投入使用的新医院聘请国内知名医院建筑设计专家进行规划设计，布局合理、设计美观实用、环境优美，成为二环路上的一道亮丽风景。目前，全院拥有众多学科带头人、优秀青年人才、研究生、主任医师、副主任医师和返聘医学专家，技术力量形成梯队，医院各专业科室布局合理，医院编制床位1000张，开放床位984张。复建的老年病房楼投资2.32亿元，建筑面积35900平方米，床位566张，医院总床位将达到1500张。</span>
+                </div>
+              </div>
+              <div class="card-status">
+                <a href="hospital.html"><span class="status-msg">预约挂号</span></a>
+
+            </section>
+          </div>
+          <!-- end hospital list -->
+
+          <div class="doctor-list content-list">
+            <div class="doctor-title list-title" id="doctor"><p>知名医师</p><p><a class="more-link" href="news-list.html">更多</a></p></div>
+            <section class="doctor-card">
+                <div class="doctor-item item-avatar">
+                    <img src="imgs/and.jpg">
+                    <div class="doctor-item-msg">
+                      <h5>阿南达</h5>
+                      <p>主任医师，教授</p>
+                      <p class="p-msg">擅长内科外科肝胆科</p>
+                    </div>
+                </div>
+
+                <div class="item item-body">
+                    <p>
+                      袓传蒙医第十一代传人，擅长蒙医蒙药治疗肝、胆、肾病，慢性病、老年病，在继承家族袓传秘方的基础上，研制成专药《肭吉咛布》，用于治疗肝癌病人。
+2010年授予“全国医药卫生系统先逬个人称号”2011年授予内案古自治区首批"基层名蒙医称号”2012年荣获第50届世界传统医学“传统医学金手指'“传统医学终身成就奖”、2015年度内蒙古自洽区突出贡献专家、被认定为自治区、鄂尔多斯“草原英才”等称号。阿南达认为：癌症根本不是绝症，只要对症下药，蒙医药完全可以使癌症患者康复并延长其生命，也可以减轻病人痛苦，提髙其生活质量.此疗法已获得“中国医学自主创新与民间诊疗特别贡献奖”
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                  <a href="#" class="item-footer-btn">我要预约</a>
+                </div>
+            </section>
+
+            <section class="doctor-card">
+                <div class="doctor-item item-avatar">
+                    <img src="imgs/zy.jpg">
+                    <div class="doctor-item-msg">
+                      <h5>阿南达</h5>
+                      <p>主任医师，教授</p>
+                      <p class="p-msg">擅长内科外科肝胆科</p>
+                    </div>
+                </div>
+
+                <div class="item item-body">
+                    <p>
+                      毕业于内蒙古医学院临床医学系，大学本科，学士学位。从事儿科、新生儿科临床、科研和教学工作20年，擅长儿童营养不良、新生儿缺氧缺血性脑病、婴幼儿腹泻、小儿重症肺炎等疾病的治疗。曾于内蒙古医学院第一附属医院进修一年，发表论文20余篇。获呼铁局科研成果奖两项。现任内蒙古医学会儿科分会委员，内蒙古、呼市两级医疗事故鉴定委员会专家组成员。
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                  <a href="#" class="item-footer-btn">我要预约</a>
+                </div>
+                  </section>
+            <section class="doctor-card">
+                <div class="doctor-item item-avatar">
+                    <img src="imgs/lhc.jpg">
+                    <div class="doctor-item-msg">
+                      <h5>阿南达</h5>
+                      <p>主任医师，教授</p>
+                      <p class="p-msg">擅长内科外科肝胆科</p>
+                    </div>
+                </div>
+
+                <div class="item item-body">
+                    <p>
+                      主任医师，教授，上海交通大学医学院附属第九人民医院口腔颅颌面种植科主任，博士，博士生导师。现任中华口腔医学会口腔种植专业委员会副主任委员，国际口腔种植协会专家委员会委员（ITI Fellow），《临床口腔种植研究》中文版主编，研究生全英文教材主编。赖红昌教授长期从事口腔医学及口腔种植学专业，在国际上享有相当知名度，已经培养了四十多名口腔种植研究生，曾赴法国Louis PASTEUR大学牙学院和瑞士日内瓦大学种植中心访问学习。赖教授临床经验丰富，除了对常规的种植支持固定修复、种植支持活动修复等有极高的诊治技术外，对种植辅助骨增量术、种植美学修复、种植全口义齿修复、种植-牙周维护治疗、种植-正畸联合治疗等疑难病例也具有较高的诊治能力，并长期致力于口腔种植新技术的开发和临床应用。赖教授多次在国际国内重要会议上发言，发表重要临床和基础研究论文。发表SCI论文30篇，其中临床型SCI论文发表量和被引次数居全国首位。近五年立项课题8项，其中国际课题3项、国家重大科学研究计划“973”项目子课题1项、国家自然基金3项；编写专著3部（主编1部，参编2部）；合作开发种植体专利1项
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                  <a href="#" class="item-footer-btn">我要预约</a>
+                </div>
+            </section>
+            <section class="doctor-card">
+                <div class="doctor-item item-avatar">
+                    <img src="imgs/gh.jpg">
+                    <div class="doctor-item-msg">
+                      <h5>阿南达</h5>
+                      <p>主任医师，教授</p>
+                      <p class="p-msg">擅长内科外科肝胆科</p>
+                    </div>
+                </div>
+
+                <div class="item item-body">
+                    <p>
+                      曾在美国加州大学旧金山分校（UCSF）进行博士后工作，长期担任美国纽约大学医学中心神经外科助理教授。之后作为国家海外杰出人才引进回国，曾就职于卫生部北京医院、上海同济大学附属东方医院，担任医院神经外科主任，破格晋升国家一级教授，时任中国最年轻的神经外科教授。现任上海德济医院癫痫病治疗中心/功能神经外科主任。 郭辉教授在担任中央保健局保健专家期间，曾亲自为多名中央领导人主持开展帕金森病手术，完成的帕金森外科DBS手术居北京地区第三位，并获得技术创新一等奖。接受手术的副部级以上中央领导年龄从70岁至95岁不等，是目前全国平均年龄最高的手术群体。 自1993年，郭教授就开始从事癫痫外科治疗，是国内最早开展颅内电极埋置术的专家之一。2004年初在国内率先开展癫痫外科迷走神经刺激术，是目前国内唯一开展“皮层刺激治疗癫痫”项目的癫痫外科专家。迄今为止，他完成的癫痫手术已达3000余例，总体有效率在90%以上，治愈率达80%以上，是国内长期从事顽固性癫痫手术治疗的资深专家。
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                  <a href="#" class="item-footer-btn">我要预约</a>
+                </div>
+            </section>
+            <section class="doctor-card">
+                <div class="doctor-item item-avatar">
+                    <img src="imgs/xqw.jpg">
+                    <div class="doctor-item-msg">
+                    <h5>徐启武</h5>
+                    <p>教授、医学硕士、主任医师</p>
+                    <p class="p-msg">擅长内科外科肝胆科</p>
+                    </div>
+                </div>
+
+                <div class="item item-body">
+                    <p>
+                      1967年毕业于上海第二医科大学医学系，1981年毕业于上海医科大学研究生院，获神经外科硕士学位，之后赴法国郎戈医学院和美国密歇根大学医院进修。曾任上海复旦大学附属华山医院神经外科主任、神经外科教授、博士生导师，上海市神经外科临床医学中心副主任，上海复旦大学医学院神经病学研究所副所长，上海市华山神经外科研究所副所长。现任上海德济医院名誉院长、脑-脊髓肿瘤治疗中心主任。 徐启武教授历年来一直从事颅底肿瘤、脑干肿瘤等脑瘤，脊髓肿瘤和脊髓疾病等研究，以及神经外科教学，已培养博士研究生11名，硕士研究生6名。担任《中国临床神经科学》、《中国微侵袭神经外科杂志》、《中华临床医学》和《中国神经肿瘤杂志》等九本杂志的常务编委或编委。先后获部市级科技进步奖和教育成果奖8项；参编高级教科书和参考书14部；在国内、外专业杂志上发表论文上百篇。荣获上海市劳动模范、“中国名医百强榜”上榜名医。 至今，徐教授已从事神经外科临床科研与教学工作30余年，作为我国资深神经外科专家，亲自主持开展过30000余例手术，成功挽救了众多病危患者的生命，被誉为中国神经外科“三把刀之一”，“华东第一刀”，在业界颇具威望。
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                  <a href="#" class="item-footer-btn">我要预约</a>
+                </div>
+            </section>
+          </div>
+          <div class="doctor-list content-list">
+            <div class="doctor-title list-title" id="doctorm"><p>知名蒙医</p><p><a class="more-link" href="news-list.html">更多</a></p></div>
+            <section class="doctor-card">
+                <div class="doctor-item item-avatar">
+                    <img src="imgs/and.jpg">
+                    <div class="doctor-item-msg">
+                      <h5>阿南达</h5>
+                      <p>主任医师，教授</p>
+                      <p class="p-msg">擅长内科外科肝胆科</p>
+                    </div>
+                </div>
+
+                <div class="item item-body">
+                    <p>
+                      袓传蒙医第十一代传人，擅长蒙医蒙药治疗肝、胆、肾病，慢性病、老年病，在继承家族袓传秘方的基础上，研制成专药《肭吉咛布》，用于治疗肝癌病人。
+2010年授予“全国医药卫生系统先逬个人称号”2011年授予内案古自治区首批"基层名蒙医称号”2012年荣获第50届世界传统医学“传统医学金手指'“传统医学终身成就奖”、2015年度内蒙古自洽区突出贡献专家、被认定为自治区、鄂尔多斯“草原英才”等称号。阿南达认为：癌症根本不是绝症，只要对症下药，蒙医药完全可以使癌症患者康复并延长其生命，也可以减轻病人痛苦，提髙其生活质量.此疗法已获得“中国医学自主创新与民间诊疗特别贡献奖”
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                  <a href="#" class="item-footer-btn">我要预约</a>
+                </div>
+            </section>
+
+            <section class="doctor-card">
+                <div class="doctor-item item-avatar">
+                    <img src="imgs/zy.jpg">
+                    <div class="doctor-item-msg">
+                    <h5>郑瑜</h5>
+                    <p>主任医师，教授</p>
+                    <p class="p-msg">擅长内科外科肝胆科结合治疗各类疾病结合治疗各类疾病</p>
+                   </div>
+                </div>
+
+                <div class="item item-body">
+                    <p>
+                      毕业于内蒙古医学院临床医学系，大学本科，学士学位。从事儿科、新生儿科临床、科研和教学工作20年，擅长儿童营养不良、新生儿缺氧缺血性脑病、婴幼儿腹泻、小儿重症肺炎等疾病的治疗。曾于内蒙古医学院第一附属医院进修一年，发表论文20余篇。获呼铁局科研成果奖两项。现任内蒙古医学会儿科分会委员，内蒙古、呼市两级医疗事故鉴定委员会专家组成员。
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                  <a href="#" class="item-footer-btn">我要预约</a>
+                </div>
+                  </section>
+            <section class="doctor-card">
+                <div class="doctor-item item-avatar">
+                    <img src="imgs/gh.jpg">
+                    <div class="doctor-item-msg">
+                    <h5>郭辉</h5>
+                    <p>教授、医学博士后、科学博士</p>
+                    <p class="p-msg">擅长内科外科肝胆科</p>
+                   </div>
+                </div>
+
+                <div class="item item-body">
+                    <p>
+                      曾在美国加州大学旧金山分校（UCSF）进行博士后工作，长期担任美国纽约大学医学中心神经外科助理教授。之后作为国家海外杰出人才引进回国，曾就职于卫生部北京医院、上海同济大学附属东方医院，担任医院神经外科主任，破格晋升国家一级教授，时任中国最年轻的神经外科教授。现任上海德济医院癫痫病治疗中心/功能神经外科主任。 郭辉教授在担任中央保健局保健专家期间，曾亲自为多名中央领导人主持开展帕金森病手术，完成的帕金森外科DBS手术居北京地区第三位，并获得技术创新一等奖。接受手术的副部级以上中央领导年龄从70岁至95岁不等，是目前全国平均年龄最高的手术群体。 自1993年，郭教授就开始从事癫痫外科治疗，是国内最早开展颅内电极埋置术的专家之一。2004年初在国内率先开展癫痫外科迷走神经刺激术，是目前国内唯一开展“皮层刺激治疗癫痫”项目的癫痫外科专家。迄今为止，他完成的癫痫手术已达3000余例，总体有效率在90%以上，治愈率达80%以上，是国内长期从事顽固性癫痫手术治疗的资深专家。
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                  <a href="#" class="item-footer-btn">我要预约</a>
+                </div>
+            </section>
+            <section class="doctor-card">
+                <div class="doctor-item item-avatar">
+                    <img src="imgs/xqw.jpg">
+                    <div class="doctor-item-msg">
+                    <h5>徐启武</h5>
+                    <p>教授、医学硕士、主任医师</p>
+                    <p class="p-msg">擅长内科外科肝胆科</p>
+                  </div>
+                </div>
+
+                <div class="item item-body">
+                    <p>
+                      1967年毕业于上海第二医科大学医学系，1981年毕业于上海医科大学研究生院，获神经外科硕士学位，之后赴法国郎戈医学院和美国密歇根大学医院进修。曾任上海复旦大学附属华山医院神经外科主任、神经外科教授、博士生导师，上海市神经外科临床医学中心副主任，上海复旦大学医学院神经病学研究所副所长，上海市华山神经外科研究所副所长。现任上海德济医院名誉院长、脑-脊髓肿瘤治疗中心主任。 徐启武教授历年来一直从事颅底肿瘤、脑干肿瘤等脑瘤，脊髓肿瘤和脊髓疾病等研究，以及神经外科教学，已培养博士研究生11名，硕士研究生6名。担任《中国临床神经科学》、《中国微侵袭神经外科杂志》、《中华临床医学》和《中国神经肿瘤杂志》等九本杂志的常务编委或编委。先后获部市级科技进步奖和教育成果奖8项；参编高级教科书和参考书14部；在国内、外专业杂志上发表论文上百篇。荣获上海市劳动模范、“中国名医百强榜”上榜名医。 至今，徐教授已从事神经外科临床科研与教学工作30余年，作为我国资深神经外科专家，亲自主持开展过30000余例手术，成功挽救了众多病危患者的生命，被誉为中国神经外科“三把刀之一”，“华东第一刀”，在业界颇具威望。
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                  <a href="#" class="item-footer-btn">我要预约</a>
+                </div>
+            </section>
+          </div>
+          <!-- end doctor list -->
+                   <div class="health-list content-list">
+            <div class="health-title list-title"><p>体检中心</p><p><a class="more-link" href="news-list.html">更多</a></p></div>
+            <section class="health-card content-card">
+              <div class="card-gallery"><img src="imgs/ph.jpg" alt="sum"></div>
+              <div class="card-summary">
+                <div class="summary-title-msg">
+                  <span class="summary-title">内蒙古肿瘤医院体检中心</span>
+                  <span class="title-label">三级甲等</span>
+                </div>
+                <div class="summary-address-msg">
+                  <span class="summary-label">地址：</span><span class="summary-address">内蒙古呼和浩特市昭乌达路20号</span>
+                  <span class="summary-address-map">map</span>
+                </div>
+                <div class="summary-tel-msg">
+                  <span class="summary-label">电话：</span><a href="#">0471-6620999</a>
+                </div>
+                <div class="summary-web-msg">
+                  <span class="summary-label">官网：</span><a href="#">http://www.nmgyy.cn/</a>
+                </div>
+                <div class="summary-summary-msg">
+                  <span class="summary-label">简介：</span><span class="summary-summary">内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医多年的发展历程。通过几代内蒙古自治区医院,内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院内蒙古自治区人民医院是自治区直管直办的一所综多年的发展历程。通过几代内蒙古自治区医院,内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院内蒙古自治区人民医院是自治区直管直办的一所综院</span>
+                </div>
+              </div>
+              <div class="card-status">
+                 <a href="health.html"><span class="status-msg">我要预约</span></a>
+            </section>
+
+            <section class="health-card content-card">
+              <div class="card-gallery"><img src="imgs/ph.jpg" alt="sum"></div>
+              <div class="card-summary">
+                <div class="summary-title-msg">
+                  <span class="summary-title">内蒙古医院</span>
+                  <span class="title-label">三级甲等</span>
+                </div>
+                <div class="summary-address-msg">
+                  <span class="summary-label">地址：</span><span class="summary-address">内蒙古呼和浩特市昭乌达路20号</span>
+                  <span class="summary-address-map">map</span>
+                </div>
+                <div class="summary-tel-msg">
+                  <span class="summary-label">电话：</span><a href="#">0471-6620999</a>
+                </div>
+                <div class="summary-web-msg">
+                  <span class="summary-label">官网：</span><a href="#">http://www.nmgyy.cn/</a>
+                </div>
+                <div class="summary-summary-msg">
+                  <span class="summary-label">简介：</span><span class="summary-summary">内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医多年的发展历程。通过几代内蒙古自治区医院,内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院内蒙古自治区人民医院是自治区直管直办的一所综院</span>
+                </div>
+              </div>
+              <div class="card-status">
+                 <a href="health.html"><span class="status-msg">我要预约</span></a>
+            </section>
+
+            <section class="health-card content-card">
+              <div class="card-gallery"><img src="imgs/ph.jpg" alt="sum"></div>
+              <div class="card-summary">
+                <div class="summary-title-msg">
+                  <span class="summary-title">内蒙古医院</span>
+                  <span class="title-label">三级甲等</span>
+                </div>
+                <div class="summary-address-msg">
+                  <span class="summary-label">地址：</span><span class="summary-address">内蒙古呼和浩特市昭乌达路20号</span>
+                  <span class="summary-address-map">map</span>
+                </div>
+                <div class="summary-tel-msg">
+                  <span class="summary-label">电话：</span><a href="#">0471-6620999</a>
+                </div>
+                <div class="summary-web-msg">
+                  <span class="summary-label">官网：</span><a href="#">http://www.nmgyy.cn/</a>
+                </div>
+                <div class="summary-summary-msg">
+                  <span class="summary-label">简介：</span><span class="summary-summary">内蒙古自治区人民医院是自治区直管直办的一所综合性医院。她随自治区一起成立，至今有60多年的发展历程。通过几代内蒙古自治区医院</span>
+                </div>
+              </div>
+              <div class="card-status">
+                <a href="health.html"><span class="status-msg">我要预约</span></a>
+            </section>
+          </div>
+          <!--start health list -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">©2017 - 内蒙古蒙荣文化发展有限公司</div>
+    </footer>
+    <section class="fixed-menu">
+      <div class="fixed-menu-buttons">
+        <a href="hospital.html"><span class="fixed-menu-icon"></span><button class="fixed-menu-button">快速挂号</button></a>
+        <a href="health.html"><span class="fixed-menu-icon"></span><button class="fixed-menu-button">体检预约</button></a>
+        <a href="person-account.html"><span class="fixed-menu-icon"></span><button class="fixed-menu-button">个人中心</button></a>
+      </div>
+    </section>
+    <script src="js/jquery-1.7.2.min.js" charset="utf-8"></script>
+    <script src="js/jquery.cxselect.min.js" charset="utf-8"></script>
+    <script src="js/slick.min.js" charset="utf-8"></script>
+    <script src="js/master.js" charset="utf-8"></script>
+    <script src="js/scroll-smooth.js" charset="utf-8"></script>
+  </body>
+</html>

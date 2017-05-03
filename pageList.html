@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>所有页面详情列表</title>
+  <style media="screen">
+    iframe{
+      position: fixed;
+      top: 51px;
+      right: 20px;
+      transition: all 0.3s;
+    }
+    div{
+      position: fixed;
+      top: 20px;
+      right: 100px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+    button{
+      padding: 5px 10px;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>此页为本项目所有页面说明页</h2>
+  <hr>
+  <h3>入口首页</h3>
+  <p><a href="index.html">index.html</a>为最初入口文件用于选择语言版本</p>
+  <p><a href="index2.html">index2.html</a>为中文版本</p>
+  <p><a href="index3.html">index3.html</a>为蒙文文字版本， 因蒙文在各平台的显示兼容问题， 目前已废弃</p>
+  <p><a href="index4.html">index4.html</a>为蒙文图片版本，所有蒙文内容需要图片呈现</p>
+  <hr>
+
+  <h3>医院相关页面</h3>
+  <p><a href="hospital.html">hospital.html</a>为所有医院列表页， 主要负责列出各医院基本信息及包含的科室, 并导航至具体科室</p>
+  <p><a href="doctor.html">doctor.html</a>为具体医院科室页， 负责展示本科室基本信息及旗下所有医生并挂号</p>
+  <hr>
+
+  <h3>体检中心相关页面</h3>
+  <p><a href="health.html">health.html</a>为体检中心页面， 负责展示各体检中心的基本信息及体检项目的预约</p>
+  <hr>
+
+  <h3>各类帐户信息页面</h3>
+  <p><a href="person-account.html">person-account.html</a>为患者帐户信息页， 用于修改个人基本信息并接收预约挂号信息</p>
+  <p><a href="personal-msg.html">personal-msg.html</a>为患者个人信息修改中心</p>
+  <p><a href="personal-health.html">personal-health.html</a>为患者接收体检报告扫描件的地方</p>
+
+  <p><a href="hospital-account.html">hospital-account.html</a>为医院帐号页面用于修改医院基本信息</p>
+  <p><a href="doctor-account.html">doctor-account.html</a>为医生帐号页面用于展示患者预约信息</p>
+  <p><a href="group-account.html">group-account.html</a> 为医院科室模版用于设置各个医生的出诊时间</p>
+
+  <div>
+    <input type="button" value="调整视口宽度"></input>
+    <input type="range" name="range" value="50">
+  </div>
+  <iframe src="index.html" width="400px" height="600px" allow-top-navigation="true"></iframe>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      var links = document.querySelectorAll('a');
+      var iframe = document.querySelector('iframe');
+      var buttons = document.querySelectorAll('button');
+      var range = document.querySelector('input[type="range"]');
+      var text = document.querySelector('input[type="button"]');
+      range.addEventListener('change', function(e) {
+        var width = window.innerWidth;
+        var iframe_width = (e.target.value * 0.01 * width - 60).toFixed();
+        iframe.style.width = iframe_width + 'px';
+        text.value = iframe_width + ' px ' + '像素';
+      })
+      function click() {
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener('click', function(e) {
+              e.preventDefault();
+              iframe.src = e.target.href;
+          })
+        }
+      }
+      click();
+    })
+  </script>
+</body>
+</html>

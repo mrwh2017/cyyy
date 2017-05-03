@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ᠲᠠᠯ᠎ᠠ ᠶᠢᠨ ᠡᠮᠴᠢᠯᠡᠭᠡ</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/master.css">
+    <style media="screen">
+    .container-b-section .project{
+      margin-left: 16px;
+    }
+    @media (max-width: 640px) {
+      .container-b-section .project{
+        margin-left: 6px;
+      }
+    }
+    @font-face {
+      font-family: 'mm';
+      src: url(css/fonts/mngltitleaat.ttf) format('truetype');
+    }
+    *{
+      font-family:  'Open Sans', Microsoft YaHei !important;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+    li{
+      clear: both;
+    }
+    .top-header{
+      height: 125px;
+    }
+    .header-content{
+      height: 100%;
+    }
+    .header-content-buttons{
+      /*width: 160px;*/
+      /*bottom：2px;*/
+      margin-top: 10px;
+      float: right;
+      /*clear: both;*/
+    }
+    .header-content-logo{
+      margin-top: 37.5px;
+    }
+    .buttons-button .backdrop{
+      border: none;
+    }
+    .header-content-buttons .buttons-button{
+      margin-right: 10px;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      /*height: 106px;*/
+      /*width: 26px;*/
+      font-size: 12px;
+      -webkit-writing-mode: vertical-lr;
+      -moz-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+      -o-writing-mode: vertical-lr;
+      writing-mode: vertical-lr;
+      writing-mode: tb-lr;
+      -webkit-text-orientation: sideways-right;
+      letter-spacing: -0.025em;
+      float: left;
+    }
+    .buttons-button .label{
+      padding: 0.3em 0 0;
+    }
+    .order-menu-button .buttons-order{
+      -webkit-writing-mode: initial;
+      writing-mode: initial;
+    }
+
+    .main{
+      top: 125px;
+    }
+    .hospital-list{
+      margin: 0px;
+      padding: 0px;
+      -ms-writing-mode: tb-lr;
+      -moz-writing-mode: vertical-lr;
+      -webkit-writing-mode: vertical-lr;
+      -webkit-text-orientation: sideways-right;
+      -o-writing-mode: vertical-lr;
+      transform-origin: right top;
+      writing-mode: tb-lr;
+      letter-spacing: -0.015em;
+      unicode-bidi: bidi-override;
+      writing-mode: vertical-lr; */
+      direction: ltr;
+      unicode-bidi: embed;
+      -webkit-transform-origin: right top;
+      word-break: keep-all;
+      float: left;
+    }
+    .list-container{
+      margin-top: 20px;
+    }
+    .list-wrapper{
+      overflow-x: auto;
+      background-color: #90ab41;
+    }
+    .content-list{
+      width: 40px;
+      -webkit-writing-mode: vertical-lr;
+      -moz-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+      -o-writing-mode: vertical-lr;
+      writing-mode: vertical-lr;
+      height: 350px;
+      margin: 0;
+    }
+    .list-title{
+      height: 100%;
+      font-size: 12px;
+      margin: 0px;
+      padding: 10px;
+      -ms-writing-mode: tb-lr;
+      -moz-writing-mode: vertical-lr;
+      -webkit-writing-mode: vertical-lr;
+      -webkit-text-orientation: sideways-right;
+      -o-writing-mode: vertical-lr;
+      transform-origin: right top;
+      writing-mode: tb-lr;
+      letter-spacing: -0.015em;
+      unicode-bidi: bidi-override;
+      writing-mode: vertical-lr; */
+      direction: ltr;
+      unicode-bidi: embed;
+      -webkit-transform-origin: right top;
+      word-break: keep-all;
+      float: left;
+    }
+    .list-title p{
+      padding: initial;
+      height: auto;
+      /*padding: 15px 0px;*/
+      font-size: 28px;
+    }
+
+    .hospital-item{
+      float: left;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .hospital-item-img{
+      width: 140px;
+      height: 200px;
+      border-radius: 40px;
+      background: url(imgs/banner.jpg) no-repeat 50% 50%;
+      background-size: 100% 100%;
+      margin: auto;
+    }
+    h2{
+      margin-left: 20px;
+      letter-spacing: 3px;
+    }
+    .hospital-item-titile span{
+      float: left;
+      /*margin-left: 10px;*/
+      font-size: 18px;
+    }
+    .hospital-item-titile span:nth-of-type(2){
+      float: right;
+    }
+    .header-content-logo{
+      background: url(imgs/logo_m.png) no-repeat 50% 50%;
+      background-size: 100%;
+    }
+
+    @media (max-width:640px) {
+      .footer{
+        margin-bottom: initial;
+        margin-top: initial;
+        top: 144px;
+      }
+      .header-content-logo{
+        float: right;
+        z-index: 999;
+        position: relative;
+      }
+      .buttons-button .mm{
+        font-size: 12px;
+      }
+      .buttons-button .label{
+        color: #8BC34A;
+      }
+      .buttons-button .backdrop{
+        /*background-color: #a1cb27;*/
+      }
+      .list-title p{
+        font-size: 16px;
+      }
+    }
+    .mm{
+      letter-spacing:   -0.025em;
+    }
+    .cc{
+      /*letter-spacing: -0.22em;*/
+    }
+    .footer-container{
+      overflow-x: hidden;
+    }
+    </style>
+
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="header-content">
+        <a class="header-content-logo" href="#">
+          <span></span>
+        </a>
+        <div class="header-content-buttons">
+          <a href="hospital.html" class="buttons-order buttons-button">
+            <span class="backdrop"></span>
+            <span class="label mm">ᠲᠠᠯ᠎ᠠ ᠶᠢᠨ ᠡᠮᠴᠢᠯᠡᠭᠡ</span>
+          </a>
+          <a href="health.html" class="buttons-check buttons-button">
+            <span class="backdrop"></span>
+            <span class="label mm">ᠪᠡᠶ᠎ᠡ ᠪᠠᠶᠢᠴᠠᠭᠠᠯᠲᠠ ᠪᠠᠨ ᠪᠤᠯᠠᠵᠤᠬᠤᠢ</span>
+          </a>
+          <a href="person-account.html" class="buttons-me buttons-button">
+            <span class="backdrop"></span>
+            <span class="label mm">ᠬᠤᠪᠢ ᠬᠦᠮᠦᠨ ᠳ᠋ᠸ᠋ᠳᠸ᠋ᠳ ᠳ᠋ᠹᠸᠡᠹᠸᠡᠹ ᠲᠥᠪ</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+      <div class="gallery-container">
+        <div class="gallery-slide-wrapper">
+          <a href="#" class="gallery-item"><img src="imgs/banner1.jpg" alt=""></a>
+          <a href="#" class="gallery-item"><img src="imgs/banner2.jpg" alt=""></a>
+          <a href="#" class="gallery-item"><img src="imgs/banner3.jpg" alt=""></a>
+          <a href="#" class="gallery-item"><img src="imgs/banner4.jpg" alt=""></a>
+        </div>
+        <div class="menu-container">
+          <div class="menu-container-fix">
+          <div class="order-menu">
+            <fieldset>
+              <legend class="visuallyhidden">选择挂号方式：</legend>
+              <div class="order-menu-filter">
+                <span class="menu-filter-buttons">
+                  <button class="menu-filter-button menu-filter-buttonactive">快速挂号</button>
+                  <button class="menu-filter-button">知名医生</button>
+                </span>
+              </div>
+              <div class="order-menu-container">
+                <div class="container-a-section order-model model-hide model-active">
+                  <span class="section-select-box"><p>选择地区</p><select class="section-select province" vlaue="a"></select><select class="section-select city" vlaue="a"></select></span>
+                  <span class="section-select-box"><p>选择医院</p><select class="section-select hospital" vlaue="a"></select></span>
+                  <span class="section-select-box"><p>选择科室</p><select class="section-select project" vlaue="a"></select></span>
+                  <div class="order-menu-button">
+                <a href="hospital.html" class="buttons-order buttons-button">
+                  我要预约
+                </a>
+              </div>
+                </div>
+                <div class="container-b-section order-model model-hide">
+                  <span class="section-select-box"><p>选择地区</p><select class="section-select hospital" vlaue="a"></select></span>
+                  <span class="section-select-box"><p>中医/蒙医</p><select class="section-select project" vlaue="a"></select></span>
+                  <span class="section-select-box"><p>选择医生</p><select class="section-select doctor" vlaue="a"></select></span>
+                  <div class="order-menu-button model-hide">
+                    <a  class="buttons-order buttons-button">
+                  我要预约
+                </a>
+              </div>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-container">
+        <div class="list-wrapper">
+        <!--start hospital list -->
+          <div class="hospital-list content-list">
+            <div class="hospital-title list-title" id="hospital"><p class="label mm">ᠹᠭᠳᠰᠭ  ᠹᠳᠹ ᠺᠯᠹᠳᠰ  ᠺᠹᠳᠰᠹᠳᠰᠯ</p><p class="label mm">ᠲᠠᠯ᠎ᠠ ᠶᠢᠨ ᠡᠮᠴᠢᠯᠡᠭᠡ</p></div>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><h2>内蒙古人民医院</h2></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">ᠬᠠᠶᠠᠭ</span><span class="hospital-label-r">地址</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">ᠤᠲᠠᠰᠦ</span><span class="hospital-label-r">电话</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">labellabel</span><span class="hospital-label-r">简介 label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><h2>内蒙古人民医院</h2></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">ᠬᠠᠶᠠᠭ</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">ᠤᠲᠠᠰᠦ</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><h2>内蒙古人民医院</h2></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">ᠬᠠᠶᠠᠭ</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">ᠤᠲᠠᠰᠦ</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><h2>内蒙古人民医院</h2></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">ᠬᠠᠶᠠᠭ</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">ᠤᠲᠠᠰᠦ</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><h2>内蒙古人民医院</h2></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">ᠬᠠᠶᠠᠭ</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">ᠤᠲᠠᠰᠦ</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label mm">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="list-container">
+        <div class="list-wrapper">
+        <!--start hospital list -->
+          <div class="hospital-list content-list">
+            <div class="hospital-title list-title" id="hospital"><p class="mm">ᠨᠡᠷᠡᠲᠦ ᠡᠮᠴᠢ</p><p class="mm">ᠨᠡᠩ ᠤᠯᠠᠨ</p></div>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">名字</span><span class="hospital-label-r">职称label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">简介label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="list-container">
+        <div class="list-wrapper">
+        <!--start hospital list -->
+          <div class="hospital-list content-list">
+            <div class="hospital-title list-title" id="hospital"><p class="mm">ᠨᠡᠷᠡᠲᠦ ᠡᠮᠴᠢ</p><p class="mm">ᠨᠡᠩ ᠤᠯᠠᠨ</p></div>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">名字labellabel</span><span class="hospital-label-r">职称label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">简介,擅长labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg lab label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="list-container">
+        <div class="list-wrapper">
+        <!--start hospital list -->
+          <div class="hospital-list content-list">
+            <div class="hospital-title list-title" id="hospital"><p class="mm">ᠪᠡᠶ᠎ᠡ ᠪᠠᠶᠢᠴᠠᠭᠠᠯᠲᠠ ᠶᠢᠨ ᠲᠥᠪ</p><p class="mm">ᠨᠡᠩ ᠤᠯᠠᠨ</p></div>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><h2>内蒙古人民医院</h2></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">地址label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><h2>内蒙古人民医院</h2></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+            <section class="hospital-item">
+              <ul class="hospital-list">
+                <li class="hospital-item-img"></li>
+                <li class="hospital-item-titile"><h2>内蒙古人民医院</h2></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msg</span></li>
+                <li class="hospital-item-titile"><span class="hospital-label">labellabel</span><span class="hospital-label-r">label-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msgl-msg label-msg</span></li>
+              </ul>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">©2017 - ᠥᠪᠦᠷ ᠮᠤᠩᠭᠤᠯ ᠤᠨ ᠮᠸ᠋ᠩ ᠷᠦᠩ ᠰᠤᠶᠤᠯ ᠤᠨ ᠬᠦᠭᠵᠢᠯᠲᠡ ᠶᠢᠨ ᠬᠢᠵᠠᠭᠠᠷᠲᠦ ᠺᠤᠮᠫᠠᠨᠢ</div>
+    </footer>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+    <script src="js/jquery-1.7.2.min.js" charset="utf-8"></script>
+    <script src="js/jquery.cxselect.min.js" charset="utf-8"></script>
+    <script src="js/slick.min.js" charset="utf-8"></script>
+    <script src="js/master.js" charset="utf-8"></script>
+  </body>
+</html>

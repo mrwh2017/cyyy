@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册</title>
+  <link rel="stylesheet" href="css/master.css">
+  <style>
+  .list-title p:last-child{
+    float: left;
+  }
+  .content-card{
+    height: auto;
+  }
+  .msg-list{
+    padding: 0 25px;
+  }
+  @media (max-width:640px) {
+    .msg-list{
+      padding: 0 5px;
+    }
+  }
+  input{
+    float: right;
+    height: 30px;
+    width: 60%;
+    padding-left: 10px;
+    vertical-align: middle;
+    line-height: 30px;
+    background-color: #efefef;
+  }
+  /*li:first-child input{
+    color: #fff;
+    background-color: #0070c9;
+  }*/
+  li{
+    list-style-type:  none;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  li:last-child{
+    border-bottom: 0;
+  }
+
+  .personal-msg-save{
+    text-align: center;
+    position: relative;
+    height: 80px;
+    margin-top: 30px;
+    }
+  .personal-msg-save input{
+    padding: 10px 20px;
+    width: 260px;
+    color: #fff;
+    background: #a1cb27;
+    float: none;
+    line-height: normal;
+  }
+  .phone-check{
+    border: 1px solid red;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 20px;
+  }
+  @media (max-width:420px) {
+  .phone-check{
+    margin-left: 5px;
+  }
+  }
+  </style>
+  </head>
+  <body>
+    <div class="dt-personal">
+    <div class="list-container">
+          <div class="list-wrapper">
+          <div class="personal-list content-list">
+          <div class="health-title list-title"><p>个人用户注册</p></div>
+          <form class="" action="index.html" method="post">
+            <div class="msg-field content-card">
+              <ul class="msg-list">
+                <li class="personal-msg-item">
+                  <label for="phone">手机号码</label>
+                  <input type="text" name="phone" placeholder="输入手机号码" value="">
+                </li>
+                <li class="personal-msg-item">
+                  <label for="phone-check">验证码</label>
+                  <span class="phone-check">获取验证码</span>
+                  <input type="number" name="phone-check" placeholder="输入验证码" value="">
+                </li>
+                <li class="personal-msg-item">
+                  <label for="psw">密码</label>
+                  <input type="text" name="psw" placeholder="输入密码" value="">
+                </li>
+                <li class="personal-msg-item">
+                  <label for="psw_2">确认密码</label>
+                  <input type="text" name="psw_2" placeholder="再次输入密码" value="">
+                </li>
+              </ul>
+            </div>
+            <div class="personal-msg-save">
+              <input type="submit" name="" value="注册">
+            </div>
+          </form>
+          </div>
+          </div>
+          </div>
+      </div>
+      </div>
+  </body>
+</html>

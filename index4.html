@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ᠲᠠᠯ᠎ᠠ ᠶᠢᠨ ᠡᠮᠴᠢᠯᠡᠭ</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <style media="screen">
+    *{
+      padding: 0;
+      margin: 0;
+      /*font-family: 'Open Sans', 'Microsoft YaHei',sans-serif;*/
+      list-style: none;
+      text-decoration: none;
+      scroll-behavior: smooth;
+      font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    }
+    body{
+      background-color: white;
+    }
+    *::-webkit-scrollbar {
+        width: 6px;
+        height: 4px;
+    }
+    @media (max-width: 640px) {
+      *::-webkit-scrollbar {
+          height: 0;
+      }
+    }
+    *::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: rgba(78,78,78,0.5);
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+    *::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    .gallery-container{
+      width: 100%;
+      /*height: 300px;*/
+    }
+    .gallery-slide-wrapper{
+      width: 100%;
+      height: 100%;
+    }
+    .gallery-item img{
+      width: 100%;
+    }
+    /*slick-dots style*/
+    .slick-dotted.slick-slider{
+      margin-bottom: 0;
+    }
+    .slick-dots li button:before{
+      opacity: 0.8;
+    }
+    .slick-dots li{
+      margin: 0 5px 0 0;
+    }
+    /*remove gallery margin*/
+    .slick-dots{
+      bottom: -6px;
+    }
+    .slick-dots li button:before{
+      width: 6px;
+      height: 6px;
+      content: '';
+      border: 1px solid #0070c9;
+      border-radius: 50%;
+    }
+    .slick-dots li.slick-active button:before{
+      background-color: #a7a7a7;
+      border-color: #a7a7a7;
+    }
+    /*main*/
+    main{
+      width: 100%;
+    }
+    .main-wrapper{
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      /*background-color: red;*/
+      padding-left: 10px;
+      box-sizing: border-box;
+    }
+    /*doctor*/
+    .doctor-slide-wrapper{
+      height: 400px;
+      width: 100%;
+    }
+    .section-container{
+      border-bottom: 1px solid #999;
+      padding-bottom: 10px;
+      /*overflow-x: hidden;*/
+    }
+    .list-title{
+      padding: 15px 0;
+    }
+    .title-item{
+      /*-ms-writing-mode: tb-lr;
+      -moz-writing-mode: vertical-lr;
+      -webkit-writing-mode: vertical-lr;
+      -webkit-text-orientation: sideways-right;
+      -o-writing-mode: vertical-lr;
+      transform-origin: right top;
+      writing-mode: tb-lr;
+      letter-spacing: -0.015em;
+      unicode-bidi: bidi-override;
+      writing-mode: vertical-lr;
+      direction: ltr;
+      unicode-bidi: embed;
+      -webkit-transform-origin: right top;
+      word-break: keep-all;
+      float: left;*/
+    }
+    .title-item:last-child{
+      float: right;
+      font-size: 12px;
+      padding-right: 20px;
+      padding-top: 7px;
+      color: #777;
+      position: relative;
+    }
+    .title-item:last-child::after{
+      content: '';
+      background: url(imgs/arrow.png) no-repeat right center;
+      width: 10px;
+      height: 10px;
+      background-size: cover;
+      width: 9px;
+      height: 9px;
+      position: absolute;
+      left: 25px;
+      top: 11px;
+    }
+    .section-list{
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      padding-left: 10px;
+      -webkit-overflow-scrolling: touch;
+    }
+    @media (max-width: 640px) {
+      .section-list{
+        margin-left: -10px;
+      }
+    }
+    .section-list li{
+      display: inline-block;
+      /*float: left;*/
+      width: 200px;
+      height: 200px;
+      margin-left: 10px;
+    }
+    .section-list li:first-child{
+      margin-left: 0;
+      width: 100px;
+      height: 200px;
+    }
+    .section-list li img{
+      width: 100%;
+      height: 100%;
+      border: 1px solid transparent;
+      border-radius: 20px;
+    }
+    /*hospital list*/
+    .hospital-list li{
+      width: 300px;
+      height: 200px;
+    }
+    /*menu*/
+    aside{
+      position: fixed;
+      bottom: -60px;
+      right: 6px;
+      transform: rotate(90deg);
+      transform-origin: right top;
+    }
+    .menu-trigger{
+      display: inline-block;
+      line-height: 1;
+      white-space: nowrap;
+      cursor: pointer;
+      border: 1px solid #bfcbd9;
+      color: #1f2d3d;
+      -webkit-appearance: none;
+      text-align: center;
+      box-sizing: border-box;
+      outline: none;
+      margin: 0;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      padding: 10px 15px;
+      font-size: 14px;
+      border-radius: 4px;
+      background: #eefff5 url(imgs/menu.svg) no-repeat 7% center;
+      background-size: 26px 26px;
+      padding-left: 40px;
+    }
+    .menu-group{
+      margin-top: 10px;
+    }
+    .menu-item{
+      display: block;
+      margin-top: 5px;
+      background-color: red;
+      border-radius: 15px;
+      padding: 5px 10px;
+      transition: all 3s ease;
+      opacity: 0;
+    }
+    .jump_in{
+      animation: jump 0.9s  linear  alternate forwards;
+      transition: all 3s;
+    }
+    .jump_out{
+      animation: jump 0.9s  linear  reverse backwards;
+      transition: all 3s;
+    }
+    @keyframes jump {
+      0%{
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+      50%{
+        opacity: 0.5;
+        transform: translateX(-30px);
+      }
+      100%{
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    /*footer*/
+    footer{
+      margin: 10px 0;
+    }
+    .copyright{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery-slide-wrapper">
+      <a href="#" class="gallery-item"><img src="imgs/banner1.jpg" alt=""></a>
+      <a href="#" class="gallery-item"><img src="imgs/banner2.jpg" alt=""></a>
+      <a href="#" class="gallery-item"><img src="imgs/banner3.jpg" alt=""></a>
+      <a href="#" class="gallery-item"><img src="imgs/banner4.jpg" alt=""></a>
+    </div>
+  </div>
+
+  <main>
+    <div class="main-wrapper">
+      <section class="section-container doctor-mn">
+        <div class="list-title">
+          <span class="title-item">草原名医</span>
+          <span class="title-item">更多</span>
+        </div>
+          <ul class="section-list doctor-mn">
+          <li><img src="imgs/banner1.jpg" alt=""></li>
+          <li><img src="imgs/banner2.jpg" alt=""></li>
+          <li><img src="imgs/banner1.jpg" alt=""></li>
+          <li><img src="imgs/banner2.jpg" alt=""></li>
+          <li><img src="imgs/banner3.jpg" alt=""></li>
+          <li><img src="imgs/banner4.jpg" alt=""></li>
+          </ul>
+      </section>
+
+      <section class="section-container doctor-zh">
+        <div class="list-title">
+          <span class="title-item">青城名医</span>
+          <span class="title-item">更多</span>
+        </div>
+          <ul class="section-list">
+          <li><img src="imgs/banner1.jpg" alt=""></li>
+          <li><img src="imgs/banner2.jpg" alt=""></li>
+          <li><img src="imgs/banner1.jpg" alt=""></li>
+          <li><img src="imgs/banner2.jpg" alt=""></li>
+          <li><img src="imgs/banner3.jpg" alt=""></li>
+          <li><img src="imgs/banner4.jpg" alt=""></li>
+          </ul>
+      </section>
+
+      <section class="section-container hospital">
+        <div class="list-title hospital-title">
+          <span class="title-item">医院预约</span>
+          <span class="title-item">更多</span>
+        </div>
+          <ul class="section-list hospital-list">
+          <li><img src="imgs/banner1.jpg" alt=""></li>
+          <li><img src="imgs/banner2.jpg" alt=""></li>
+          <li><img src="imgs/banner1.jpg" alt=""></li>
+          <li><img src="imgs/banner2.jpg" alt=""></li>
+          <li><img src="imgs/banner3.jpg" alt=""></li>
+          <li><img src="imgs/banner4.jpg" alt=""></li>
+          </ul>
+      </section>
+
+      <section class="section-container hospital">
+        <div class="list-title hospital-title">
+          <span class="title-item">健康体检</span>
+          <span class="title-item">更多</span>
+        </div>
+          <ul class="section-list hospital-list">
+          <li><img src="imgs/banner1.jpg" alt=""></li>
+          <li><img src="imgs/banner2.jpg" alt=""></li>
+          <li><img src="imgs/banner1.jpg" alt=""></li>
+          <li><img src="imgs/banner2.jpg" alt=""></li>
+          <li><img src="imgs/banner3.jpg" alt=""></li>
+          <li><img src="imgs/banner4.jpg" alt=""></li>
+          </ul>
+      </section>
+
+      <aside class="menu">
+        <span class="menu-trigger">ᠹᠳ ᠹᠳᠺᠵ ᠯᠺᠵᠹᠳ</span>
+        <ul class="menu-group">
+          <a href="person-account.html"><li class="menu-item">ᠹᠳ ᠹᠳᠺᠵ ᠯᠺᠵᠹᠳ ᠺᠯᠵᠹᠳ ᠺᠵᠹᠳ</li></a>
+          <a href="hospital.html"><li class="menu-item"> ᠹᠳ ᠺᠯᠹᠳ ᠯᠹᠺ ᠯᠹᠳ ᠯ ᠹᠳ</li></a>
+          <a href="doctor.html"><li class="menu-item"> ᠹᠵᠺᠳᠵ ᠺᠯ ᠹᠳ ᠺᠯᠹᠳ ᠺᠹᠳᠢᠥ</li></a>
+        </ul>
+      </aside>
+
+
+    </div>
+  </main>
+  <footer>
+    <div class="copyright">
+        <p>©2017 - 内蒙古蒙荣文化发展有限公司</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-1.7.2.min.js" charset="utf-8"></script>
+  <script src="js/slick.min.js" charset="utf-8"></script>
+  <script src="js/fastclick.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('.gallery-slide-wrapper').slick({
+        dots: true,
+        autoplay: true,
+        arrows: false
+      });
+    FastClick.attach(document.body);
+
+    var trigger = document.querySelector('.menu-trigger');
+    var items = document.querySelectorAll('.menu-item');
+    function slide_in() {
+      for (var i = 0; i < items.length; i++) {
+        items[i].classList.remove('jump_out');
+        items[i].classList.add('jump_in');
+        items[i].style.animationDelay = '0.' + i + 's';
+      }
+    }
+    function slide_out() {
+      for (var i = 0; i < items.length; i++) {
+        items[i].classList.toggle('jump_in');
+        items[i].classList.add('jump_out');
+      }
+    }
+    trigger.onclick = function() {
+      if (items[0].classList.contains('jump_in')) {
+        slide_out();
+      } else {
+        slide_in();
+      }
+    }
+
+
+    })
+  </script>
+</body>
+</html>

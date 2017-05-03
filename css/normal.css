@@ -1,0 +1,114 @@
+*{
+  list-style-type: none;
+}
+@font-face {
+  font-family: mn;
+  src: url(fonts/mnglwhiteotf.woff);
+}
+body{
+  font-family: mn, "Microsoft YaHei",sans-serif !important;
+}
+li{
+  clear: both;
+}
+.top-header{
+  height: 110px;
+}
+.header-content{
+  height: 100%;
+}
+.header-content-buttons{
+  width: 110px;
+}
+.header-content-logo{
+  margin-top: 30px;
+}
+.header-content-buttons .buttons-button{
+  margin-right: 10px;
+  padding: 0;
+  display: inline-block;
+  height: 98px;
+  width: 26px;
+  font-size: 12px;
+  font-family: 'Mongolian White';
+  -webkit-writing-mode: vertical-lr;
+  -moz-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  -o-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  writing-mode: tb-lr;
+  float: left;
+}
+.buttons-button .label{
+  padding: 0.3em 0 0;
+}
+.order-menu-button .buttons-order{
+  -webkit-writing-mode: initial;
+  writing-mode: initial;
+}
+
+.main{
+  top: 110px;
+}
+
+.list-container{
+  margin-top: 20px;
+}
+.list-wrapper{
+  overflow-x: auto;
+  background-color: #90ab41;
+}
+.content-list{
+  width: 40px;
+  -webkit-writing-mode: vertical-lr;
+  -moz-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  -o-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  writing-mode: tb-lr;
+  height: 350px;
+  margin: 0;
+}
+.list-title{
+  height: 100%;
+  margin: initial;
+}
+.list-title p{
+  padding: initial;
+  height: initial;
+  line-height: 40px;
+  padding: 15px 0px;
+}
+
+.hospital-item{
+  float: left;
+  display: inline-block;
+  margin: 10px;
+}
+
+.hospital-item-img{
+  width: 140px;
+  height: 200px;
+  border-radius: 40px;
+  background: url(../imgs/banner.jpg) no-repeat 50% 50%;
+  background-size: 100% 100%;
+  margin: auto;
+}
+.hospital-item-titile{
+  margin-left: 15px;
+}
+.hospital-item-titile span{
+  float: left;
+  margin-left: 10px;
+}
+.hospital-item-titile span:nth-of-type(2){
+  float: right;
+}
+
+@media (max-width:640px) {
+  .footer{
+    margin-bottom: initial;
+    margin-top: initial;
+    top: 144px;
+  }
+}
