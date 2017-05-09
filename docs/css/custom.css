@@ -355,7 +355,8 @@ header{
   width: 100%;
   float: left;
   padding-bottom: 30px;
-  background: linear-gradient(180deg, #f3f9ff, #67a8e4, #7ab9e4 80%, #fff);
+  /*background: linear-gradient(180deg, #f3f9ff, #67a8e4, #7ab9e4 80%, #fff);*/
+  background: linear-gradient(180deg, #fff, #7ab9e4, #67a8e4 70%, rgba(242, 248, 253, 0.1));
 }
 .group-list a{
   display: inline-block;
@@ -611,12 +612,17 @@ header{
   text-align: center;
   color: #0070c9;
 }
+.act-open{
+  white-space: normal;
+  height: auto;
+}
 /*doctor-list end*/
 
 /*hospital-list*/
 .hospital{
   width: 100%;
   background-color: #fff;
+  padding-bottom: 40px;
 }
 .hospital-list{
   margin: 9px 0 5px 0px;

@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
   <link rel="icon" type="image/x-icon" href="imgs/icon.ico">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
@@ -307,9 +311,29 @@
         <p class="item-title">阿南达</p>
         <span class="item-location">地方名医</span><span class="item-group">内科</span>
         <p class="item-act">擅长：蒙医蒙药治疗肝、胆、肾病，慢性病、老年病，在继承家族袓传秘方的基础上，研制成专药《肭吉咛布》，用于治疗肝癌病人。
-2010年授予“全国医药卫生系统先逬个人称号”2011年授予内案古自治区首批"基层名蒙医称号”2012年荣获第50届世界传统医学“传统医学金手指'“传统医学终身成就奖”、2015年度内蒙古自洽区突出贡献专家、被认定为自治区、鄂尔多斯“草原英才”等称号。阿南达认为：癌症根本不是绝症，只要对症下药，蒙医药完全可以使癌症患者康复并延长其生命，也可以减轻病人痛苦，提髙其生活质量.此疗法已获得“中国医学自主创新与民间诊疗特别贡献奖”</p>
+2010年授予“全国医药卫生系统先逬个人称号”2011年授予内案古自治区首批"基层名蒙医称号”2012年荣获第50届世界传统医学“传统医学金手指'“传统医学终</p>
       </li>
       </a>
+      <section class="house-call">
+        <div class="group-toggle">
+          <button class="toggle-button">
+            <span class="icon-plus"></span>
+            <span class="icon-plus"></span>
+          </button>
+        </div>
+        <div class="call-container">
+          <div class="container-box">
+            <span class="container-box-title">选择预约时间</span>
+            <!-- <span class="container-box-fee"></span> -->
+          </div>
+          <div class="container-cell">
+            <div class="cell-item">
+
+            </div>
+            <div class="cell-item"></div>
+          </div>
+        </div>
+      </section>
       <a href="#"><li class="doctor-item">
         <div class="item-img"></div>
         <p class="item-title">郑瑜</p>
@@ -386,6 +410,7 @@
         autoplay: false,
         arrows: false
       });
+
       var hospital_group = $('.hospital-group');
       var toggle_button = $('.toggle-button');
       var search_hospital = $('.search-hospital');
@@ -420,7 +445,7 @@
         toggle_button.addClass('close');
         toggle_button.removeClass('open');
       }
-      function open(e){
+      function open(){
         hospital_group.slideDown('500');
         toggle_button.removeClass('close');
         toggle_button.addClass('open');
@@ -430,6 +455,8 @@
         search_groups[0].style.display = 'inline-block';
         search_groups[group_index].style.display = 'block';
       }
+      var house_call = $('.house-call');
+      var doctor_toggle = $('.house-call .toggle-button');
     })
   </script>
 </body>
