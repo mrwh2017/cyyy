@@ -186,7 +186,7 @@ header{
 }
 .search-list a{
   display: inline-block;
-  width: 33.3%;
+  width: 25%;
   float: left;
 }
 .search-item{
@@ -207,10 +207,14 @@ header{
   background-size: auto 100%;
 }
 .search-list a:nth-of-type(2)>.search-item>.item-img{
-  background: url(../imgs/group.svg) no-repeat 50% 0;
-  background-size: auto 90%;
+  background: url(../imgs/group.svg) no-repeat 50% 50%;
+  background-size: auto 86%;
 }
 .search-list a:nth-of-type(3)>.search-item>.item-img{
+  background: url(../imgs/health.svg) no-repeat 50% 100%;
+  background-size: auto 90%;
+}
+.search-list a:nth-of-type(4)>.search-item>.item-img{
   background: url(../imgs/server.svg) no-repeat 50% 100%;
   background-size: auto 100%;
 }
@@ -221,12 +225,14 @@ header{
   width: 100%;
   background: #eee;
   position: relative;
+  display: none;
+  overflow: hidden;
 }
 .group-toggle{
   width: 100%;
   height: 55px;
   display: inline-block;
-  background-color: red;
+  background-color: #fff;
   position: relative;
 }
 .icon-plus{
@@ -287,25 +293,83 @@ header{
   /*position: absolute;*/
   /*top: 64px;*/
 }
+.hospital-container .hospital-list{
+  /*background: linear-gradient(180deg, #fff, #7ab9e4, #67a8e4 90%, #67a8e4);*/
+  background: linear-gradient(180deg, #fff, #7ab9e4, #67a8e4 60%, rgba(242, 248, 253, 0.5));
+  padding-bottom: 50px;
+  margin: 0;
+}
+.hospital-container .hospital-list a{
+  border-bottom: 1px solid rgba(255,255,255,0.52);
+}
+.hospital-container .hospital-list a .hospital-item{
+  color: #2b2b2b;
+}
+.hospital-container .hospital-list a .hospital-item .item-location,
+.hospital-container .hospital-list a .hospital-item .item-phone{
+  line-height: 1.5em;
+}
+.hospital-container .hospital-list>a:nth-of-type(1)>.hospital-item>.item-img{
+  background: url(../imgs/nmgzl.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.hospital-container .hospital-list>a:nth-of-type(2)>.hospital-item>.item-img{
+  background: url(../imgs/nmgfy.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.hospital-container .hospital-list>a:nth-of-type(3)>.hospital-item>.item-img{
+  background: url(../imgs/nmgrm.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.hospital-container .hospital-list>a:nth-of-type(4)>.hospital-item>.item-img{
+  background: url(../imgs/nmgmy.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.hospital-container .hospital-list>a:nth-of-type(5)>.hospital-item>.item-img{
+  background: url(../imgs/nmgdefs.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.hospital-container .hospital-list>a:nth-of-type(6)>.hospital-item>.item-img{
+  background: url(../imgs/nmgdy.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.hospital-container .hospital-list>a:nth-of-type(7)>.hospital-item>.item-img{
+  background: url(../imgs/nmgrj.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.hospital-container .hospital-list>a:nth-of-type(8)>.hospital-item>.item-img{
+  background: url(../imgs/nmgds.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.hospital-container .hospital-list>a:nth-of-type(9)>.hospital-item>.item-img{
+  background: url(../imgs/nmg253.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
 .group-container{
   width: 100%;
   margin: 0 auto;
   border-radius: 6px;
-  padding-top: 12px;
-  /*position: absolute;
-  top: 64px;*/
 }
 .group-list{
   width: 100%;
+  float: left;
+  padding-bottom: 30px;
+  background: linear-gradient(180deg, #f3f9ff, #67a8e4, #7ab9e4 80%, #fff);
 }
 .group-list a{
   display: inline-block;
   width: 25%;
   float: left;
+  border-right: 1px solid rgba(255,255,255,0.22);
+  margin-right: -1px;
+  margin-left: 1px;
+  border-bottom: 1px solid rgba(255,255,255,0.52);
 }
 .group-item{
   width: 100%;
   height: auto;
+  margin: 15px 0;
 }
 .group-item .item-icon{
   display: block;
@@ -317,7 +381,7 @@ header{
 .group-item .item-title{
   text-align: center;
   margin-top: 5px;
-  color: #707070;
+  color: #fff;
 }
 .group-list a:nth-of-type(1)>.group-item>.item-icon{
   background: url(../group_imgs/bone.png) no-repeat center center;
@@ -399,14 +463,70 @@ header{
   background: url(../group_imgs/fx.png) no-repeat center center;
   background-size: cover;
 }
-.hospital-group .hospital-list a{
-  border: 0;
+
+.health-container{
+
+}
+.health-list{
+  background: linear-gradient(180deg, #fff, #7ab9e4, #67a8e4 60%, rgba(242, 248, 253, 0.5));
+  padding-bottom: 50px;
+  margin: 0;
+}
+.health-list a{
+  display: block;
+  width: 100%;
+  min-height: 70px;
+  border-bottom: 1px solid rgba(255,255,255,0.52);
+  position: relative;
+}
+.health-item{
+  color: #2b2b2b;
+  padding: 9px 0 5px 10px;
+}
+.health-item>.item-img{
+  border-radius: 5px;
+  width: 46px;
+  height: 46px;
+  float: left;
+}
+.health-list>a:nth-of-type(1)>.health-item>.item-img{
+  background: url(../imgs/nmgzl.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.health-list>a:nth-of-type(2)>.health-item>.item-img{
+  background: url(../imgs/nmgfy.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.health-list>a:nth-of-type(3)>.health-item>.item-img{
+  background: url(../imgs/zktj.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.health-list>a:nth-of-type(4)>.health-item>.item-img{
+  background: url(../imgs/nmgmy.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.health-list>a:nth-of-type(5)>.health-item>.item-img{
+  background: url(../imgs/zgtj.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.health-item p{
+  margin-left: 60px;
+}
+.health-item .item-title{
+  color: #333;
+}
+.health-item .item-phone{
+  margin-top: 4px;
+  line-height: 1.5em;
+}
+.health-item .item-location{
+  line-height: 1.5em;
 }
 /*hospital-group end*/
 .title{
   width: 100%;
-  border-bottom: 1px solid #e8e8e8;
-  margin-top: 8px;
+  /*border-bottom: 1px solid #e8e8e8;*/
+  margin: 25px 0 15px;
 }
 .title p{
   padding: 6px 0;
@@ -504,12 +624,12 @@ header{
 }
 .hospital-list a{
   display: block;
-  background-color: #FFF;
   width: 100%;
   min-height: 70px;
   border-bottom: 2px solid rgba(33, 150, 243, 0.79);
   position: relative;
 }
+
 .hospital-item {
   color: #9c9c9c;
   padding: 9px 0 5px 10px;
@@ -529,13 +649,10 @@ header{
   background-size: cover;
 }
 .hospital-list>a:nth-of-type(3)>.hospital-item>.item-img{
-  background: url(../imgs/nmgrm.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-.hospital-list>a:nth-of-type(4)>.hospital-item>.item-img{
   background: url(../imgs/nmgmy.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
+
 .hospital-item p{
   margin-left: 60px;
 }
