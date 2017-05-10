@@ -524,6 +524,7 @@ header{
   line-height: 1.5em;
 }
 /*hospital-group end*/
+
 .title{
   width: 100%;
   /*border-bottom: 1px solid #e8e8e8;*/
@@ -554,7 +555,6 @@ header{
 }
 .doctor-item{
   color: #9c9c9c;
-
   padding: 9px 0 5px 10px;
 }
 .doctor-item>.item-img{
@@ -612,9 +612,99 @@ header{
   text-align: center;
   color: #0070c9;
 }
+/*doctor-list-partial-house-call*/
 .act-open{
   white-space: normal;
   height: auto;
+}
+.house-call{
+  display: none;
+  overflow: hidden;
+}
+.house-call .slick-dots{bottom: -35px;}
+.house-call .slick-dots li{
+  width: 10px;
+}
+.house-call .slick-dots li.slick-active button:before{
+  background-color: #2ba1f5;
+  border-color: #2ba1f5;
+}
+.call-container{
+  width: 100%;
+  padding: 0 10px 0 10px;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+.call-container figcaption{
+  text-align: center;
+  padding: 5px;
+  font-size: 1.2em;
+}
+.container-box{
+  padding-left: 7px;
+}
+.call-container .container-box span{
+  line-height: 30px;
+  font-size: 1.2em;
+  position: relative;
+  display: inline-block;
+}
+.call-container .container-box-fee{
+  float: right;
+}
+.call-container .container-box-title::before,
+.call-container .container-box-fee::before{
+  content: '';
+  width: 3px;
+  height: 12px;
+  background-color: rgba(79, 187, 83, 0.8);
+  position: absolute;
+  left: -7px;
+  top: 9px;
+}
+
+.container-cell{
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.cell-item table{
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+.cell-item table td{
+  padding: 2px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: normal;
+}
+.cell-item table thead td p:nth-of-type(2){
+  line-height: 1.5em;
+}
+.cell-item table td:first-child{
+  padding: 10px 2px;
+}
+td > img{
+  width: 18px;
+  height: 18px;
+  margin: 0 auto;
+}
+.cell-item table tbody tr td{
+  color: #fff;
+}
+.cell-item table tbody tr td:first-child{
+  color: #333;
+}
+td > .green{
+  background: rgb(43, 161, 245);
+  border-radius: 50px;
+  border: 3px solid rgb(43, 161, 245);
+  padding: 8px 3px;
+  color: white;
+  vertical-align: bottom;
+  cursor: pointer;
 }
 /*doctor-list end*/
 
