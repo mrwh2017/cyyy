@@ -22,7 +22,7 @@
       <span class="btn">搜索</span>
     </div>
   </header>
-  <section class="gallery">
+  <section class="gallery" style="overflow: hidden">
     <div class="gallery-slide-wrapper">
       <a class="gallery-item"><img src="imgs/banner1.jpg" alt=""></a>
       <a class="gallery-item"><img src="imgs/banner2.jpg" alt=""></a>
@@ -1823,7 +1823,7 @@
       $('.gallery-slide-wrapper').slick({
         mobileFirst: true,
         dots: true,
-        autoplay: false,
+        autoplay: true,
         arrows: false
       });
       $('.container-cell').slick({

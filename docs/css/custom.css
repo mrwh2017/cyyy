@@ -115,6 +115,7 @@ header{
   width: 100%;
   height: auto;
   margin-top: -50px;
+  overflow: hidden;
 }
 .gallery-slide-wrapper{
   width: 100%;
@@ -804,7 +805,7 @@ td > .green{
   width: 100%;
   white-space: nowrap;
   overflow-x: scroll;
-  padding: 15px 0;
+  padding-bottom: 15px;
   background: linear-gradient(180deg, #7ab9e4, #67a8e4 80%, rgba(242, 248, 253, 0.1));
 }
 .department-item{
