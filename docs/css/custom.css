@@ -804,7 +804,7 @@ td > .green{
 .department-list{
   width: 100%;
   white-space: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding-bottom: 15px;
   background: linear-gradient(180deg, #7ab9e4, #67a8e4 80%, rgba(242, 248, 253, 0.1));
 }
@@ -877,4 +877,158 @@ td > .green{
 .hospital-list .doctor{
   display: none;
   overflow: hidden;
+}
+
+
+/*health-project-section*/
+.health-project{
+  width: 100%;
+  display: none;
+  overflow: hidden;
+}
+.project-container{
+  width: 100%;
+  margin: 0 auto;
+}
+.project-list{
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-bottom: 5px;
+  background: linear-gradient(180deg, #7ab9e4, #67a8e4 80%, rgba(242, 248, 253, 0.1));
+}
+.project-item{
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  border-radius: 15px;
+  margin: 5px;
+  margin-left: 0;
+  transition: all 0.3s linear;
+}
+.project-item-act{
+  background-color: #0e1435;
+}
+.project-item .item-icon{
+  display: block;
+  margin: 10px auto;
+  width: 36%;
+  padding-bottom: 36%;
+}
+.project-item .item-title{
+  text-align: center;
+  margin-top: 5px;
+  color: #fff;
+  white-space: pre-line;
+}
+.project-list>.project-item:nth-of-type(1) .item-icon{
+  background: url(../group_imgs/bone.png) no-repeat center center;
+  background-size: cover;
+}
+.project-list>.project-item:nth-of-type(2) .item-icon{
+  background: url(../group_imgs/child.png) no-repeat center center;
+  background-size: cover;
+}
+
+/*health-project-detail section*/
+.project-detail{
+  width: 100%;
+  display: none;
+  overflow: hidden;
+}
+.detail-container{
+  padding-bottom: 15px;
+}
+
+.detail-container .container-box{
+  padding: 15px 0 10px;
+  background-color: white;
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+.detail-container .container-box-fee{
+  float: right;
+  margin-right: 5px;
+}
+.detail-container .container-box-define{
+  margin: 10px 0;
+}
+.line{
+  width: 3px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  background: rgba(79, 187, 83, 0.8);
+  margin-right: 5px;
+}
+.container-list{
+  color: white;
+}
+.project-detail-list{
+  background: -webkit-linear-gradient(#618ec2, #2e5098);
+  background: -o-linear-gradient(#618ec2, #2e5098);
+  background: linear-gradient(#618ec2, #2e5098);
+  padding-bottom: 5px;
+}
+.detail-item{
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.2em;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.1), 2px 2px 6px rgba(0,0,0,0.4);
+}
+/*.project-detail-list:last-child .details{
+  padding-bottom: 5px;
+}*/
+.detail-item>span{
+  font-size: 1.5em;
+  margin-right: 5px;
+  vertical-align: baseline;
+}
+.detail-item>span.toggle{
+  float: right;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 15px;
+  background: url(../imgs/target.svg) no-repeat center center;
+  background-size: cover;
+  transition: all 0.2s ease-out;
+}
+.span-act{
+  transform: rotateZ(109deg);
+}
+p.details{
+  margin: 5px;
+  padding-left: 22px;
+  color: #d6d6d6;
+  display: none;
+  overflow: hidden;
+}
+
+.project-pay{
+  padding: 15px;
+  margin-top: -4px;
+  background: -webkit-linear-gradient(#618ec2, #2e5098);
+  background: -o-linear-gradient(#618ec2, #2e5098);
+  background: linear-gradient(#618ec2, #2e5098);
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.1), 2px 2px 6px rgba(0,0,0,0.4);
+}
+.project-pay span{
+  display: inline-block;
+  width: 45%;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  padding: 14px 18px;
+  border-radius: 5px;
+  text-shadow: 0  -1px 0 rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+  background: #00bff3;
+  background: -webkit-linear-gradient(top, #4ec6f3, #1986cc);
+  box-shadow: inset 1px 1px 0 rgba(255  , 255, 255, 0.1), 2px 2px 6px rgba(0,0,0,0.4);
+}
+.project-pay span.project-pay-buy{
+  float: right;
 }

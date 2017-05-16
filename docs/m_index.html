@@ -266,6 +266,74 @@
             <p class="item-location">呼和浩特市昭乌达路 42 号</p>
           </li>
         </a>
+
+        <section class="health-project">
+          <div class="project-container">
+            <ul class="project-list">
+              <li class="project-item">
+                <i class="item-icon"></i>
+                <p class="item-title">标准单人套餐标准单人套餐 (男)</p>
+              </li>
+              <li class="project-item">
+                <i class="item-icon"></i>
+                <p class="item-title">标准单人套餐 (女)</p>
+              </li>
+              <li class="project-item">
+                <i class="item-icon"></i>
+                <p class="item-title"></p>
+              </li>
+              <li class="project-item">
+                <i class="item-icon"></i>
+                <p class="item-title"></p>
+              </li>
+              <li class="project-item">
+                <i class="item-icon"></i>
+                <p class="item-title"></p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="project-detail">
+          <div class="detail-container">
+            <div class="container-box">
+              <span class="container-box-title">
+                <span class="line"></span>本套餐共包含 9 项体检项目
+              </span>
+              <span class="container-box-fee"><span class="line"></span>医道独享价： <span class="fee">369元</span></span>
+              <p class="container-box-define"><span class="line"></span>
+                本套餐主要针对心脑血管病、颈椎病、肝病、肾病等慢病及常见肿瘤的健康筛查。
+              </p>
+            </div>
+            <div class="container-list">
+              <ol class="project-detail-list">
+                <li class="detail-item"><span>1</span>耳鼻咽喉科<span class="toggle"></span></li>
+                  <p class="details">通过对耳、鼻、咽等器官的常规器械检查，发现常见疾病。</p>
+                <li class="detail-item"><span>2</span>内科检查<span class="toggle"></span></li>
+                  <p class="details">通过对营养,面容,体态,心脏,肺部,腹部,肝脏,脾脏。 通过视、触、叩、听检查心、肺、肝、脾等重要脏器的基本状况，发现常见疾病的相关征兆，或初步排除常见疾病。</p>
+                <li class="detail-item"><span>3</span>外科检查<span class="toggle"></span></li>
+                  <p class="details">检查皮肤、浅表淋巴结、甲状腺、脊柱、四肢关节、肛门、直肠、前列腺、外生殖器等有无异常</p>
+                <li class="detail-item"><span>4</span>眼科检查<span class="toggle"></span></li>
+                  <p class="details">检查眼部疾病</p>
+                <li class="detail-item"><span>5</span>尿常规<span class="toggle"></span></li>
+                  <p class="details">了解泌尿系统代谢功能、筛查肾炎、尿路感染、尿血、糖尿病等</p>
+                <li class="detail-item"><span>6</span>肾功三项<span class="toggle"></span></li>
+                  <p class="details">检测肾功能，协助诊断肾脏疾病、尿毒症、以及痛风等。</p>
+                <li class="detail-item"><span>7</span>空腹血糖(FBG)<span class="toggle"></span></li>
+                  <p class="details">评价人体空腹状态下糖代谢是否正常，评估糖尿病患者空腹血糖控制是否达标。空腹血糖是诊断糖代谢紊乱的最常用和最重要指标。</p>
+                <li class="detail-item"><span>8</span>肝功八项<span class="toggle"></span></li>
+                  <p class="details">急性胆囊炎、胆道堵塞、黄疸症、胆结石、肝硬化、肝脓肿、肝癌、脂肪肝、肝萎缩、急慢性肝炎、中毒性肝炎、酒精性肝炎、低蛋白血症、高蛋白血症及肝功能异常等疾病</p>
+                <li class="detail-item"><span>9</span>血常规<span class="toggle"></span></li>
+                  <p class="details">血细胞情况、排除炎症性疾病、血癌、贫血等</p>
+              </ol>
+            </div>
+            <div class="project-pay">
+               <span class="project-pay-collect">收藏此套餐</span>
+               <span class="project-pay-buy">订购此套餐</span>
+            </div>
+          </div>
+        </section>
+
         <a href="">
           <li class="health-item">
             <div class="item-img"></div>
@@ -1830,6 +1898,7 @@
         mobileFirst: true,
         dots: true,
         // autoplay: true,
+        infinite: false,
         arrows: false
 
       });
@@ -1932,6 +2001,33 @@
         }
       }
 
+      // health-list click
+      var health_list = $('.health-container .health-list>a')
+      for (var i = 0; i < health_list.length; i++) {
+        health_list[i].onclick = function(e) {
+          e.preventDefault();
+          var health_project = $(this).next('.health-project');
+          var project_items = health_project.find('.project-container .project-list li')
+          var project_detail = health_project.next('section .project-detail')
+          var project_detail_items = project_detail.find('.detail-container .container-list ol li')
+          health_project.slideToggle('500')
+          project_detail.slideUp('300')
+
+          for (var i = 0; i < project_items.length; i++) {
+            project_items[i].onclick = function(){
+              project_items.removeClass('project-item-act')
+              $(this).addClass('project-item-act')
+              project_detail.slideDown('500')
+            }
+          }
+          for (var i = 0; i < project_detail_items.length; i++) {
+            project_detail_items[i].onclick = function(){
+              $(this).next('.details').slideToggle('500')
+              $(this).find('span.toggle').toggleClass('span-act')
+            }
+          }
+        }
+      }
 
     })
   </script>
