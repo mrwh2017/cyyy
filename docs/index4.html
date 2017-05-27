@@ -92,10 +92,6 @@
       box-sizing: border-box;
     }
     /*doctor*/
-    .doctor-slide-wrapper{
-      height: 400px;
-      width: 100%;
-    }
     .section-container{
       border-bottom: 1px solid #999;
       padding-bottom: 10px;
@@ -112,7 +108,7 @@
       color: #777;
       position: relative;
     }
-    .title-item:last-child::after{
+    /*.title-item:last-child::after{
       content: '';
       background: url(imgs/arrow.png) no-repeat right center;
       width: 10px;
@@ -123,7 +119,7 @@
       position: absolute;
       left: 25px;
       top: 11px;
-    }
+    }*/
     .section-list{
       width: 100%;
       overflow-x: scroll;
@@ -139,7 +135,6 @@
     }
     .section-list li{
       display: inline-block;
-      /*float: left;*/
       width: 150px;
       height: 160px;
       margin-left: 10px;
@@ -231,6 +226,47 @@
     .copyright{
       text-align: center;
     }
+    .copyright p {
+      background: url(./m_imgs/mrwh591.png) no-repeat ;
+      background-size: contain;
+      background-position: center;
+      height: 35px;
+      margin: 0 auto;
+    }
+    .list-title .title-item:first-child{
+      background: url(./m_imgs/my211.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left;
+      height: 35px;
+      width: 110px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      display: block;
+      display: block;
+      float: left;
+    }
+    .hospital .list-title .title-item:first-child{
+      background: url(./m_imgs/yyyy344.png) no-repeat;
+      background-size: contain;
+    }
+    .health .list-title .title-item:first-child{
+      background: url(./m_imgs/tj213.png) no-repeat;
+      background-size: contain;
+    }
+    .list-title .title-item:last-child{
+      background: url(./m_imgs/gd105.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+      height: 35px;
+      width: 110px;
+      margin-bottom: 10px;
+      margin-right: 15px;
+      display: block;
+      display: block;
+      float: right;
+    }
   </style>
 </head>
 <body>
@@ -247,8 +283,8 @@
     <div class="main-wrapper">
       <section class="section-container doctor-mn">
         <div class="list-title">
-          <span class="title-item">草原名医</span>
-          <span class="title-item">更多</span>
+          <span class="title-item"></span>
+          <span class="title-item"></span>
         </div>
           <ul class="section-list doctor-mn">
           <li><img src="imgs/banner1.jpg" alt=""></li>
@@ -262,8 +298,8 @@
 
       <section class="section-container doctor-zh">
         <div class="list-title">
-          <span class="title-item">青城名医</span>
-          <span class="title-item">更多</span>
+          <span class="title-item"></span>
+          <span class="title-item"></span>
         </div>
           <ul class="section-list">
           <li><img src="imgs/banner1.jpg" alt=""></li>
@@ -277,8 +313,8 @@
 
       <section class="section-container hospital">
         <div class="list-title hospital-title">
-          <span class="title-item">医院预约</span>
-          <span class="title-item">更多</span>
+          <span class="title-item"></span>
+          <span class="title-item"></span>
         </div>
           <ul class="section-list hospital-list">
           <li><img src="imgs/banner1.jpg" alt=""></li>
@@ -290,10 +326,10 @@
           </ul>
       </section>
 
-      <section class="section-container hospital">
+      <section class="section-container health">
         <div class="list-title hospital-title">
-          <span class="title-item">健康体检</span>
-          <span class="title-item">更多</span>
+          <span class="title-item"></span>
+          <span class="title-item"></span>
         </div>
           <ul class="section-list hospital-list">
           <li><img src="imgs/banner1.jpg" alt=""></li>
@@ -319,7 +355,8 @@
   </main>
   <footer>
     <div class="copyright">
-        <p>©2017 - 内蒙古蒙荣文化发展有限公司</p>
+        <!-- <p>©2017 - 内蒙古蒙荣文化发展有限公司</p> -->
+        <p></p>
     </div>
   </footer>
 
